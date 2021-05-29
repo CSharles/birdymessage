@@ -1,16 +1,19 @@
 <template>
   <div id="app">
     <Register />
+    <TweetBox />
   </div>
 </template>
 
 <script>
 import Register from './components/Register'
+import TweetBox from './components/TweetBox'
 
 export default {
   name: 'App',
   components: {
-    Register
+    Register,
+    TweetBox
   }
 }
 </script>
