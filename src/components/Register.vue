@@ -1,34 +1,30 @@
 <template>
 <div class="register" v-if="!registered">
-  <font-awesome-icon icon="twitter" size="lg" fixed-width />
-  <div class="card">
-    <h2>Create your account</h2>
-    <form v-on:submit.prevent="registerAccount()">
-      <div class="form_group">
-        <label for="name">Name
-          <span>{{name.length +'/'+max_length}}</span>
-        </label>
-        <input type="text" v-model="name" :maxlength="max_length" required>
-      </div>
-      <div class="form_group">
-        <label for="email">Email
-          <span>{{email.length +'/'+max_length}}</span>
-        </label>
-        <input type="email" v-model="email" :maxlength="max_length" required>
-      </div>
-      <div class="form_group">
-        <label for="password">Password
-          <span>{{password.length +'/'+max_pass_length}}</span>
-        </label>
-        
-        <input type="password" v-model="password" :maxlength="max_pass_length" required>
-      </div>
-      <button type="submit">Register</button>
-    </form>
-    <div v-if="error.length > 0">{{ error }}</div>
-  </div>
+  <h2>Create your account</h2>
+  <form v-on:submit.prevent="registerAccount()">
+    <div class="form_group">
+      <label for="name">Name
+        <span>{{name.length +'/'+max_length}}</span>
+      </label>
+      <input type="text" v-model="name" :maxlength="max_length" required>
+    </div>
+    <div class="form_group">
+      <label for="email">Email
+        <span>{{email.length +'/'+max_length}}</span>
+      </label>
+      <input type="email" v-model="email" :maxlength="max_length" required>
+    </div>
+    <div class="form_group">
+      <label for="password">Password
+        <span>{{password.length +'/'+max_pass_length}}</span>
+      </label>
+      
+      <input type="password" v-model="password" :maxlength="max_pass_length" required>
+    </div>
+    <button type="submit">Register</button>
+  </form>
+  <div v-if="error.length > 0">{{ error }}</div>
 </div>
-
 </template>
 
 <script>

@@ -1,30 +1,25 @@
 <template>
   <div id="app">
-    <Register />
-    <TweetBox />
+    <div class="card">
+      <font-awesome-icon icon="twitter" size="lg" fixed-width />
+      <Register />
+      <TweetBox />
+    </div>
+      <TweetList />
   </div>
 </template>
 
 <script>
 import Register from './components/Register'
 import TweetBox from './components/TweetBox'
+import TweetList from './components/TweetList'
 
 export default {
   name: 'App',
   components: {
     Register,
-    TweetBox
+    TweetBox,
+    TweetList
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
