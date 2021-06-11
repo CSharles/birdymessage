@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <div class="card">
-      <font-awesome-icon icon="twitter" size="lg" fixed-width />
+    <div class="card tex-center">
+      <font-awesome-icon :icon="['fab', 'twitter']" size="lg" fixed-width />
       <Register />
       <TweetBox />
     </div>
