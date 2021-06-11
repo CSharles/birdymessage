@@ -1,24 +1,12 @@
-# twiter-clon
+# My twitter Clone 
 
-## Project setup
-```
-npm install
-```
+---
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+On this proyect I worked with **Vue** to create a _minimal twitter like app_, simple to try some of the Vue concepts as:
+- Templates
+- Vue Directives
+- Methods
+- Conditionals and Loops, 
+- Handling events 
+- The Two way model binding using v-model
+- Computed properties and methods
